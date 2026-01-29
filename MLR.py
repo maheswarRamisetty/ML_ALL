@@ -21,3 +21,14 @@ x = np.array([ [67, 63, 87],
 # S=A[2:]
 # print(np.may_share_memory(A,S))
 
+mytype = [('productID', np.int32), ('price', np.float64)]
+stock = np.array([(34765, 603.76),
+(45765, 439.93),
+(99661, 344.19),
+(12129, 129.39)], dtype=mytype)
+# print(stock[1])
+# print(stock["productID"])
+# print(stock[2]["price"])
+# print(stock)
+
+
